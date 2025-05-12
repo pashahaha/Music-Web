@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body-header{
+    background-color: #131314;
+ 
+}
+
+#logo img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+#logo-name{
+    color: #c7c7d4;
+    font-size: larger;
+    font-weight: bold;
+    margin: 12px;
+}
+
+#logo{
+    display: flex;
+}
+
+
+/* main */
+#main-div{
+    background-size: cover;
+    background: linear-gradient(to right, #ea7933, #080808), 
+    url("Home_pics/music_bg3.jpg") ;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-position: center;
+}
+
+.section-heading{
+    font-weight: 500;
+    font-size: 40px;
+    color: #c7c7d4;
+
+    padding-left: 25%;
+    margin: 12px;
+}
+
+
