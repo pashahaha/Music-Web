@@ -80,18 +80,20 @@ body {
 
 /* latest release */
 .play-song {
+    position: relative;
     height: 150px;
     width: 250px;
     overflow: hidden;
     border: 1px solid #c7c7d4;
     border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
 }
 
 .song-image img {
-    width: 78%;
+    width: 75%;
     height: auto;
     margin-left: 75px;
-
 }
 
 .song-image {
@@ -108,16 +110,40 @@ body {
 }
 
 .play-button {
-    color: antiquewhite;
-    padding-left: 37px;
+    position: absolute;
+    color: white;
+    background-color: rgba(21, 165, 231, 0.8);
+    padding: 10px 15px;
+    border-radius: 50%;
     font-size: 28px;
-    transition: color 0.3s, transform 0.3s;
+    transition: all 0.3s ease;
     cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-song:hover {
+    transform: scale(1.05);
 }
 
 .play-song:hover .play-button {
-    color: #15a5e7;
-    transform: scale(1.2) rotate(10deg);
+    background-color: #15a5e7;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Popular artist */
+.popular_artist{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.artist-image{
+    width: 165px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+    border: 2px solid #c7c7d4;
 }
